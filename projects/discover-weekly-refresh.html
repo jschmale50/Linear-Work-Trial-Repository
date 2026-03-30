@@ -20,9 +20,13 @@
     .issue-list { display: flex; flex-direction: column; gap: 10px; }
     .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
     .issue-card:hover { background: #282828; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -64,12 +68,56 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-11/define-candidate-pool-freshness-thresholds" target="_blank" rel="noopener">
+      <div class="issue-id">REC-11</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define candidate pool freshness thresholds</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-12/backfill-missing-artist-diversity-signals" target="_blank" rel="noopener">
+      <div class="issue-id">REC-12</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Backfill missing artist diversity signals</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/REC-8/reduce-repeated-tracks-in-weekly-discovery-playlists" target="_blank" rel="noopener">
       <div class="issue-id">REC-8</div>
       <div class="issue-body">
         <div class="issue-title">Reduce repeated tracks in weekly discovery playlists</div>
         <div class="badges">
           <span class="badge priority-medium">Medium</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-13/tune-repeat-track-suppression-weights" target="_blank" rel="noopener">
+      <div class="issue-id">REC-13</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Tune repeat-track suppression weights</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-16/detect-duplicate-artist-exposure-across-recent-playlists" target="_blank" rel="noopener">
+      <div class="issue-id">REC-16</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Detect duplicate artist exposure across recent playlists</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
@@ -86,6 +134,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-14/tag-low-novelty-complaint-patterns-by-listener-cohort" target="_blank" rel="noopener">
+      <div class="issue-id">REC-14</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Tag low-novelty complaint patterns by listener cohort</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-15/draft-triage-rubric-for-novelty-regression-reports" target="_blank" rel="noopener">
+      <div class="issue-id">REC-15</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Draft triage rubric for novelty regression reports</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/REC-3/evaluate-recommendation-diversity-across-genres" target="_blank" rel="noopener">
       <div class="issue-id">REC-3</div>
       <div class="issue-body">
@@ -93,6 +163,28 @@
         <div class="badges">
           <span class="badge priority-low">Low</span>
           <span class="badge status-todo">Todo</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-17/break-down-genre-diversity-by-market-and-age-band" target="_blank" rel="noopener">
+      <div class="issue-id">REC-17</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Break down genre diversity by market and age band</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-18/create-dashboard-for-weekly-diversity-score-trends" target="_blank" rel="noopener">
+      <div class="issue-id">REC-18</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Create dashboard for weekly diversity score trends</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
     </a>

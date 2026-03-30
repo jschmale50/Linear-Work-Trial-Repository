@@ -20,9 +20,13 @@
     .issue-list { display: flex; flex-direction: column; gap: 10px; }
     .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
     .issue-card:hover { background: #282828; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -64,6 +68,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-29/define-acceptance-metric-schema-for-home-recommendations" target="_blank" rel="noopener">
+      <div class="issue-id">REC-29</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define acceptance metric schema for home recommendations</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-30/validate-impression-to-play-attribution-in-home-feed" target="_blank" rel="noopener">
+      <div class="issue-id">REC-30</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Validate impression-to-play attribution in home feed</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/REC-4/tune-recommendation-ranking-for-mood-based-sessions" target="_blank" rel="noopener">
       <div class="issue-id">REC-4</div>
       <div class="issue-body">
@@ -71,6 +97,28 @@
         <div class="badges">
           <span class="badge priority-high">High</span>
           <span class="badge status-inprogress">In Progress</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-23/label-mood-session-examples-for-ranking-evaluation" target="_blank" rel="noopener">
+      <div class="issue-id">REC-23</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Label mood-session examples for ranking evaluation</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-26/tune-re-ranking-weights-for-calm-vs-upbeat-sessions" target="_blank" rel="noopener">
+      <div class="issue-id">REC-26</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Tune re-ranking weights for calm vs upbeat sessions</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
     </a>
@@ -86,12 +134,56 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-19/validate-save-rate-event-integrity-by-segment" target="_blank" rel="noopener">
+      <div class="issue-id">REC-19</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Validate save rate event integrity by segment</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-20/compare-save-rate-lift-across-recommendation-surfaces" target="_blank" rel="noopener">
+      <div class="issue-id">REC-20</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Compare save rate lift across recommendation surfaces</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/REC-2/add-fallback-logic-for-sparse-listener-profiles" target="_blank" rel="noopener">
       <div class="issue-id">REC-2</div>
       <div class="issue-body">
         <div class="issue-title">Add fallback logic for sparse listener profiles</div>
         <div class="badges">
           <span class="badge priority-medium">Medium</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-27/map-sparse-profile-fallback-paths-by-session-type" target="_blank" rel="noopener">
+      <div class="issue-id">REC-27</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Map sparse-profile fallback paths by session type</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-28/add-guardrails-for-low-signal-listener-cohorts" target="_blank" rel="noopener">
+      <div class="issue-id">REC-28</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Add guardrails for low-signal listener cohorts</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
@@ -108,6 +200,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-21/assemble-evaluation-set-for-new-listener-profiles" target="_blank" rel="noopener">
+      <div class="issue-id">REC-21</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Assemble evaluation set for new listener profiles</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-22/benchmark-fallback-mixes-for-cold-start-sessions" target="_blank" rel="noopener">
+      <div class="issue-id">REC-22</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Benchmark fallback mixes for cold-start sessions</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/REC-7/add-freshness-scoring-for-recently-released-songs" target="_blank" rel="noopener">
       <div class="issue-id">REC-7</div>
       <div class="issue-body">
@@ -115,6 +229,28 @@
         <div class="badges">
           <span class="badge priority-low">Low</span>
           <span class="badge status-todo">Todo</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-24/audit-release-date-quality-in-recommendation-inputs" target="_blank" rel="noopener">
+      <div class="issue-id">REC-24</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Audit release date quality in recommendation inputs</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/REC-25/define-freshness-decay-window-for-new-releases" target="_blank" rel="noopener">
+      <div class="issue-id">REC-25</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define freshness decay window for new releases</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
     </a>

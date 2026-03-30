@@ -20,9 +20,13 @@
     .issue-list { display: flex; flex-direction: column; gap: 10px; }
     .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
     .issue-card:hover { background: #282828; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -64,6 +68,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-41/define-edit-event-taxonomy-for-collaboration-analytics" target="_blank" rel="noopener">
+      <div class="issue-id">CON-41</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define edit event taxonomy for collaboration analytics</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-42/validate-active-group-aggregation-in-reporting-pipeline" target="_blank" rel="noopener">
+      <div class="issue-id">CON-42</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Validate active group aggregation in reporting pipeline</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CON-31/improve-concurrent-edit-conflict-handling-in-shared-playlists" target="_blank" rel="noopener">
       <div class="issue-id">CON-31</div>
       <div class="issue-body">
@@ -75,12 +101,56 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-37/reproduce-simultaneous-edit-conflicts-across-devices" target="_blank" rel="noopener">
+      <div class="issue-id">CON-37</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Reproduce simultaneous edit conflicts across devices</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-38/define-merge-strategy-for-concurrent-playlist-mutations" target="_blank" rel="noopener">
+      <div class="issue-id">CON-38</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define merge strategy for concurrent playlist mutations</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CON-23/add-participant-presence-indicators-to-collaborative-playlists" target="_blank" rel="noopener">
       <div class="issue-id">CON-23</div>
       <div class="issue-body">
         <div class="issue-title">Add participant presence indicators to collaborative playlists</div>
         <div class="badges">
           <span class="badge priority-medium">Medium</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-35/instrument-presence-update-latency-in-shared-playlists" target="_blank" rel="noopener">
+      <div class="issue-id">CON-35</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Instrument presence update latency in shared playlists</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-36/design-lightweight-presence-states-for-active-editors" target="_blank" rel="noopener">
+      <div class="issue-id">CON-36</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Design lightweight presence states for active editors</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
@@ -97,12 +167,56 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-39/list-rollback-scenarios-for-bulk-removal-errors" target="_blank" rel="noopener">
+      <div class="issue-id">CON-39</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">List rollback scenarios for bulk removal errors</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-40/prototype-undo-window-for-accidental-multi-select-actions" target="_blank" rel="noopener">
+      <div class="issue-id">CON-40</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Prototype undo window for accidental multi-select actions</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CON-29/review-invite-acceptance-friction-in-playlist-sharing-flow" target="_blank" rel="noopener">
       <div class="issue-id">CON-29</div>
       <div class="issue-body">
         <div class="issue-title">Review invite acceptance friction in playlist sharing flow</div>
         <div class="badges">
           <span class="badge priority-low">Low</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-33/map-invite-drop-off-points-in-share-acceptance-funnel" target="_blank" rel="noopener">
+      <div class="issue-id">CON-33</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Map invite drop-off points in share acceptance funnel</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/CON-34/test-copy-variants-for-collaborator-invite-prompts" target="_blank" rel="noopener">
+      <div class="issue-id">CON-34</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Test copy variants for collaborator invite prompts</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
