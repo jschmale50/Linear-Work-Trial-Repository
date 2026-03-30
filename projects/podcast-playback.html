@@ -20,9 +20,13 @@
     .issue-list { display: flex; flex-direction: column; gap: 10px; }
     .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
     .issue-card:hover { background: #282828; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -64,6 +68,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-13/capture-chapter-boundary-glitches-on-dynamic-ad-episodes" target="_blank" rel="noopener">
+      <div class="issue-id">POD-13</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Capture chapter boundary glitches on dynamic ad episodes</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-16/add-diagnostics-for-chapter-metadata-mismatches" target="_blank" rel="noopener">
+      <div class="issue-id">POD-16</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Add diagnostics for chapter metadata mismatches</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/POD-7/fix-resume-position-drift-on-long-podcast-episodes" target="_blank" rel="noopener">
       <div class="issue-id">POD-7</div>
       <div class="issue-body">
@@ -75,12 +101,56 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-11/reproduce-resume-drift-after-long-background-sessions" target="_blank" rel="noopener">
+      <div class="issue-id">POD-11</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Reproduce resume drift after long background sessions</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-12/compare-resume-checkpoints-across-playback-speeds" target="_blank" rel="noopener">
+      <div class="issue-id">POD-12</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Compare resume checkpoints across playback speeds</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/POD-8/add-skip-silence-control-to-podcast-player-settings" target="_blank" rel="noopener">
       <div class="issue-id">POD-8</div>
       <div class="issue-body">
         <div class="issue-title">Add skip silence control to podcast player settings</div>
         <div class="badges">
           <span class="badge priority-medium">Medium</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-14/measure-battery-impact-of-silence-detection" target="_blank" rel="noopener">
+      <div class="issue-id">POD-14</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Measure battery impact of silence detection</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-17/design-skip-silence-preference-entry-points" target="_blank" rel="noopener">
+      <div class="issue-id">POD-17</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Design skip silence preference entry points</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
@@ -97,6 +167,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-15/define-autoplay-rules-after-partially-played-episodes" target="_blank" rel="noopener">
+      <div class="issue-id">POD-15</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define autoplay rules after partially played episodes</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-18/instrument-next-episode-abandonment-after-autoplay" target="_blank" rel="noopener">
+      <div class="issue-id">POD-18</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Instrument next-episode abandonment after autoplay</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/POD-9/measure-completion-rate-impact-of-variable-speed-controls" target="_blank" rel="noopener">
       <div class="issue-id">POD-9</div>
       <div class="issue-body">
@@ -104,6 +196,28 @@
         <div class="badges">
           <span class="badge priority-low">Low</span>
           <span class="badge status-todo">Todo</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-19/segment-completion-metrics-by-playback-speed-range" target="_blank" rel="noopener">
+      <div class="issue-id">POD-19</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Segment completion metrics by playback speed range</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/POD-20/correlate-speed-usage-with-long-form-episode-finishes" target="_blank" rel="noopener">
+      <div class="issue-id">POD-20</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Correlate speed usage with long-form episode finishes</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
     </a>

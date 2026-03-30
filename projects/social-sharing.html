@@ -20,9 +20,13 @@
     .issue-list { display: flex; flex-direction: column; gap: 10px; }
     .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
     .issue-card:hover { background: #282828; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -59,6 +63,28 @@
         <div class="issue-title">Investigate failed story shares from Android clients</div>
         <div class="badges">
           <span class="badge priority-urgent">Urgent</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/GRO-11/capture-android-share-failure-logs-by-app-version" target="_blank" rel="noopener">
+      <div class="issue-id">GRO-11</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Capture Android share failure logs by app version</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/GRO-12/test-fallback-behavior-when-destination-apps-reject-share-intents" target="_blank" rel="noopener">
+      <div class="issue-id">GRO-12</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Test fallback behavior when destination apps reject share intents</div>
+        <div class="badges">
           <span class="badge status-backlog">Backlog</span>
         </div>
       </div>

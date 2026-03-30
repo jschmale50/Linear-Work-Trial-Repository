@@ -23,9 +23,13 @@
     .issue-card.active { border-left-color: #1DB954; background: #1a2420; }
     .issue-card.active:hover { background: #1f2e28; }
     .active-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #1DB954; margin-bottom: 4px; }
+    .issue-card.sub-issue { margin-left: 28px; background: #141414; border-left: 2px solid #2a2a2a; border-radius: 0 8px 8px 0; padding: 12px 20px; }
+    .issue-card.sub-issue:hover { background: #1a1a1a; }
+    .sub-indicator { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #535353; margin-bottom: 3px; font-weight: 700; }
     .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
     .issue-body { flex: 1; }
     .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .issue-card.sub-issue .issue-title { font-size: 13px; }
     .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
     .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
     .priority-urgent { background: #3d1515; color: #f15e5e; }
@@ -67,6 +71,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-11/reproduce-offline-license-expiry-across-subscription-states" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-11</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Reproduce offline license expiry across subscription states</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-13/define-user-messaging-for-expired-offline-licenses" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-13</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define user messaging for expired offline licenses</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card active" href="https://linear.app/johnschmalepersonal/issue/PLA-2/retry-failed-offline-download-chunks-on-flaky-networks" target="_blank" rel="noopener">
       <div class="issue-id">PLA-2</div>
       <div class="issue-body">
@@ -90,6 +116,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-15/define-storage-categories-for-songs-episodes-and-cache" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-15</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Define storage categories for songs episodes and cache</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-16/validate-on-device-storage-totals-against-server-estimates" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-16</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Validate on-device storage totals against server estimates</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/PLA-1/validate-download-queue-ordering-for-albums-and-playlists" target="_blank" rel="noopener">
       <div class="issue-id">PLA-1</div>
       <div class="issue-body">
@@ -101,6 +149,28 @@
       </div>
     </a>
 
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-17/document-queue-priority-rules-for-mixed-download-types" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-17</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Document queue priority rules for mixed download types</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-18/test-queue-ordering-when-playlist-contents-change" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-18</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Test queue ordering when playlist contents change</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
     <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/PLA-4/benchmark-startup-latency-for-offline-mode-resume" target="_blank" rel="noopener">
       <div class="issue-id">PLA-4</div>
       <div class="issue-body">
@@ -108,6 +178,28 @@
         <div class="badges">
           <span class="badge priority-low">Low</span>
           <span class="badge status-todo">Todo</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-12/measure-resume-latency-by-download-library-size" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-12</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Measure resume latency by download library size</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card sub-issue" href="https://linear.app/johnschmalepersonal/issue/PLA-14/compare-cold-start-and-warm-start-offline-resume-paths" target="_blank" rel="noopener">
+      <div class="issue-id">PLA-14</div>
+      <div class="issue-body">
+        <div class="sub-indicator">↳ Sub-issue</div>
+        <div class="issue-title">Compare cold-start and warm-start offline resume paths</div>
+        <div class="badges">
+          <span class="badge status-backlog">Backlog</span>
         </div>
       </div>
     </a>
