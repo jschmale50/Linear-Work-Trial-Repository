@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyrics Sync &mdash; JSCHMALE SPOTIFY INITIATIVE</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: #121212; color: #fff; font-family: 'Circular','Helvetica Neue',Helvetica,Arial,sans-serif; min-height: 100vh; }
+    header { background: linear-gradient(180deg, #1a4d2e 0%, #121212 100%); padding: 40px 40px 32px; }
+    .back-btn { display: inline-flex; align-items: center; gap: 8px; color: #fff; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: rgba(255,255,255,0.1); border: none; padding: 10px 20px; border-radius: 50px; cursor: pointer; transition: background 0.2s; margin-bottom: 28px; }
+    .back-btn:hover { background: rgba(255,255,255,0.2); }
+    .back-btn svg { width: 16px; height: 16px; fill: #fff; }
+    .project-icon { font-size: 48px; margin-bottom: 12px; }
+    .project-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #1DB954; margin-bottom: 8px; }
+    h1 { font-size: 36px; font-weight: 900; letter-spacing: -0.5px; }
+    .project-meta { margin-top: 10px; color: #b3b3b3; font-size: 13px; }
+    main { padding: 40px; max-width: 860px; margin: 0 auto; }
+    .issues-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #b3b3b3; margin-bottom: 16px; }
+    .issue-list { display: flex; flex-direction: column; gap: 10px; }
+    .issue-card { background: #181818; border-radius: 8px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; text-decoration: none; color: #fff; transition: background 0.2s; }
+    .issue-card:hover { background: #282828; }
+    .issue-id { font-size: 11px; font-weight: 700; color: #b3b3b3; min-width: 60px; padding-top: 2px; }
+    .issue-body { flex: 1; }
+    .issue-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+    .badge { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 50px; text-transform: uppercase; }
+    .priority-urgent { background: #3d1515; color: #f15e5e; }
+    .priority-high { background: #3d2a10; color: #f5a623; }
+    .priority-medium { background: #3d3510; color: #f5d523; }
+    .priority-low { background: #1a1a2e; color: #8888cc; }
+    .status-inprogress { background: #0d2e1a; color: #1DB954; }
+    .status-backlog { background: #1e1e1e; color: #b3b3b3; }
+    .status-todo { background: #1a2030; color: #6699cc; }
+    .status-inreview { background: #2a1a3d; color: #b388ff; }
+    footer { text-align: center; padding: 40px; color: #535353; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="back-btn" href="../index.html">
+    <svg viewBox="0 0 16 16"><path d="M11 2L5 8l6 6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Back to Homepage
+  </a>
+  <div class="project-icon">🎵</div>
+  <div class="project-label">Project</div>
+  <h1>Lyrics Sync</h1>
+  <div class="project-meta">Creator &amp; Catalog &mdash; 5 issues</div>
+</header>
+
+<main>
+  <div class="issues-label">Issues</div>
+  <div class="issue-list">
+
+    <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CRE-2/audit-missing-lyric-coverage-for-top-catalog-tracks" target="_blank" rel="noopener">
+      <div class="issue-id">CRE-2</div>
+      <div class="issue-body">
+        <div class="issue-title">Audit missing lyric coverage for top catalog tracks</div>
+        <div class="badges">
+          <span class="badge priority-urgent">Urgent</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CRE-4/correct-lyric-line-timing-drift-in-live-sync-view" target="_blank" rel="noopener">
+      <div class="issue-id">CRE-4</div>
+      <div class="issue-body">
+        <div class="issue-title">Correct lyric line timing drift in live sync view</div>
+        <div class="badges">
+          <span class="badge priority-high">High</span>
+          <span class="badge status-inprogress">In Progress</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CRE-3/measure-lyric-engagement-during-repeat-playback-sessions" target="_blank" rel="noopener">
+      <div class="issue-id">CRE-3</div>
+      <div class="issue-body">
+        <div class="issue-title">Measure lyric engagement during repeat playback sessions</div>
+        <div class="badges">
+          <span class="badge priority-medium">Medium</span>
+          <span class="badge status-inprogress">In Progress</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CRE-5/add-tap-to-seek-behavior-from-lyric-lines" target="_blank" rel="noopener">
+      <div class="issue-id">CRE-5</div>
+      <div class="issue-body">
+        <div class="issue-title">Add tap-to-seek behavior from lyric lines</div>
+        <div class="badges">
+          <span class="badge priority-medium">Medium</span>
+          <span class="badge status-backlog">Backlog</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="issue-card" href="https://linear.app/johnschmalepersonal/issue/CRE-1/prototype-lyric-translation-toggle-for-supported-locales" target="_blank" rel="noopener">
+      <div class="issue-id">CRE-1</div>
+      <div class="issue-body">
+        <div class="issue-title">Prototype lyric translation toggle for supported locales</div>
+        <div class="badges">
+          <span class="badge priority-low">Low</span>
+          <span class="badge status-todo">Todo</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>JSCHMALE SPOTIFY INITIATIVE &mdash; Powered by Linear</footer>
+</body>
+</html>
